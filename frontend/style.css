@@ -1,0 +1,58 @@
+h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 40px;
+    border: 5px solid #BADA55;
+    color: #A28;
+    margin: 0;
+    text-align: center;
+}
+
+body {
+    background-color: #BADA55;
+    margin: 0;
+    padding: 0;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.hOne {
+    position: absolute;
+    top: 25px;
+    width: 90%;
+    height: 10px;
+    background-color: red;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    /* animation: hOne 700ms linear infinite; */
+}
+
+.hOne::after,
+.hOne::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 10px;
+    right: -8px;
+    background-color: red;
+}
+
+.hOne::after {
+    top: -12px;
+    transform: rotate(45deg);
+}
+
+.hOne::before {
+    top: 12px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .2);
+    transform: rotate(-45deg);
+}
